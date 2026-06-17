@@ -1,28 +1,67 @@
-Small Pop-up Project
+# Small Pop-up Project
 
-I recently completed a Small Pop-up project using JavaScript, HTML, and CSS.
+A simple and interactive pop-up modal built using HTML, CSS, and JavaScript.
 
-This project demonstrates how to create an interactive pop-up modal that appears when triggered by a user action and can be closed easily. It helped me strengthen my understanding of DOM manipulation, event handling, and user interface interactions in JavaScript.
+## Project Overview
 
-Key Features:
+This project demonstrates how to create a pop-up (modal) that can be opened and closed through user interaction. It is a beginner-friendly project focused on understanding JavaScript DOM manipulation and event handling.
 
-* Open pop-up with a button click
+## Features
+
+* Open pop-up using a button
 * Close pop-up functionality
-* Clean and responsive design
-* Beginner-friendly JavaScript implementation
+* Clean user interface
+* Responsive design
+* Lightweight and easy to understand
 
-Through this project, I practiced:
+## Technologies Used
 
-* DOM Selection
-* Event Listeners
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+
+## Learning Outcomes
+
+This project helped me practice:
+
+* DOM Manipulation
+* Event Handling
 * JavaScript Functions
-* UI Interactions
-* Basic Frontend Development
+* User Interface Interactions
+* Frontend Development Fundamentals
 
-Project Repository:
+## Project Structure
+
+```text
+project-folder/
+│
+├── index.html
+├── style.css
+└── script.js
+```
+
+## How to Run
+
+1. Download or clone the repository.
+2. Open the project folder.
+3. Run `index.html` in your browser.
+
+## Author
+
+Muhammad Hanif
+
+GitHub:
 https://github.com/muhanif-dev
 
-I am continuously building projects and improving my JavaScript skills as part of my web development journey.
+LinkedIn:
+https://www.linkedin.com/in/muhammad-hanif-92a127358
 
-#JavaScript #WebDevelopment #FrontendDevelopment #HTML #CSS #Coding #Programming #LearningInPublic #100DaysOfCode #GitHub
+## Connect With Me
 
+GitHub: https://github.com/muhanif-dev
+
+LinkedIn: https://www.linkedin.com/in/muhammad-hanif-92a127358
+
+## License
+
+This project is open-source and available for learning and educational purposes.
