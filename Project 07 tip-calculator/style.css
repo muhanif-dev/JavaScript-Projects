@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+}
+.main{
+    height: 350px;
+    width: 600px;
+    background-color: #561c24;
+    border-radius: 10px;
+    padding: 10px;
+}
+.title{
+   /* background-color: aqua; */
+   width: 300px;
+   margin: auto;
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.form{
+    /* background-color: blueviolet; */
+    width: 550px;
+    height: 150px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.bill, .tip{
+    width: 550px;
+    height: 30px;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+.btn{
+    background-color: #6d2932;
+    height: 30px;
+    width: 550px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.result{
+   
+    width: 550px;
+    margin: auto;
+    height: 30px;
+    margin-top: 30px;
+}
+@media (max-width: 360px) {
+   body{
+    height: 60vh;
+    margin: auto;
+}
+    .main{
+        width: 300px;
+        height: 300px;
+        margin-right:30px; 
+    }
+    .title{
+   width: 150px;
+   font-size: 10px;
+}
+.bill, .tip{
+    width: 270px;
+    height: 20px;
+}
+.btn{
+    height: 30px;
+    width: 270px;
+    
+}
+.introLine{
+    font-size: 15px;
+}
+.form p{
+    font-size: 15px;
+}
+}
