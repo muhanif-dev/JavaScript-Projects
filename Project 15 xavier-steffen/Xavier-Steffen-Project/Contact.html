@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Styling.css">
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+
+
+
+  <div class="contactPage">
+    <div id="hamburger">
+        <div class="leftContainer">
+        <div id="manue" onclick="onClickManue()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        </div>
+      <div class="rightContainer">
+         <ul id="nav" class="nav">
+          <h2>Xavier Steffen</h2>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About me.html">About me</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+    </div>
+
+<div id="allTabsSection" class="contactPageBody">
+      <div class="wrap">
+    <div class="hero">
+      <h1>Say Hi!</h1>
+      <div class="bar" aria-hidden="true"></div>
+    </div>
+
+    <form id="contactForm" class="contact-form" action="#" method="post" novalidate>
+      <div class="grid">
+        <div>
+          <!-- <label class="field-label" for="name">Name</label> -->
+          <input id="name" name="name" type="text" placeholder="Name" />
+        </div>
+
+        <div>
+          <!-- <label class="field-label" for="email">Email</label> -->
+          <input id="email" name="email" type="email" placeholder="Email" />
+        </div>
+
+        <div>
+          <!-- <label class="field-label" for="phone">Phone</label> -->
+          <input id="phone" name="phone" type="text" placeholder="Phone" />
+        </div>
+
+        <div>
+          <!-- <label class="field-label" for="subject">Subject</label> -->
+          <input id="subject" name="subject" type="text" placeholder="Subject" />
+        </div>
+
+        <div class="full">
+          <!-- <label class="field-label" for="message">Message</label> -->
+          <textarea id="message" name="message" placeholder="Message" style="width: 90%;"></textarea>
+        </div>
+      </div>
+
+      <!-- math captcha row -->
+      <div class="math-row" role="group" aria-labelledby="captchaLabel">
+        <label id="captchaLabel" class="mc-question">2 + 2 =</label>
+
+        <input id="captchaInput" class="mc-input" inputmode="numeric" autocomplete="off"
+               placeholder="_______" pattern="\d*" style="border: none;" />
+
+        <button type="button" id="refreshBtn" class="mc-refresh" title="New challenge">⟳</button> 
+
+        <!-- <div style="flex:1"></div> -->
+
+        <button type="button" id="initialSendBtn" class="send-btn" disabled>SEND</button>
+      </div>
+
+      <!-- <div class="help">Solve the short math at right to enable <strong>SEND</strong>.</div> -->
+      <div id="captchaError" class="error" aria-live="polite"></div>
+    </form>
+
+    <!-- review panel that appears after initial SEND -->
+    <section id="reviewPanel" class="review" aria-hidden="true">
+      <h2>Complete missing fields</h2>
+      <ul id="missingList" class="missing-list" aria-live="polite"></ul>
+
+      <!-- Duplicate fields for review (prefilled from the main form) -->
+      <div class="grid" style="margin-top:8px;">
+        <div>
+          <label class="field-label" for="r_name">Name</label>
+          <input id="r_name" name="r_name" type="text" />
+        </div>
+
+        <div>
+          <label class="field-label" for="r_email">Email</label>
+          <input id="r_email" name="r_email" type="email" />
+        </div>
+
+        <div>
+          <label class="field-label" for="r_phone">Phone</label>
+          <input id="r_phone" name="r_phone" type="text" />
+        </div>
+
+        <div>
+          <label class="field-label" for="r_subject">Subject</label>
+          <input id="r_subject" name="r_subject" type="text" />
+        </div>
+
+        <div class="full">
+          <label class="field-label" for="r_message">Message</label>
+          <textarea id="r_message" name="r_message"></textarea>
+        </div>
+      </div>
+
+      <div class="final-submit">
+        <div id="finalMsg" style="color:var(--muted); font-size:14px;"></div>
+        <button id="finalSubmitBtn" class="send-btn" disabled>Final Submit</button>
+      </div>
+    </section>
+  </div>
+    <footer class="footer">
+        <div class="insta">INSTAGRAM</div>
+        <div class="copy">All rights reserved Xavier Steffen</div>
+    </footer>
+  </div>
+ 
+    <script src="Logic.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

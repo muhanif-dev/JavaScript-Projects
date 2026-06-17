@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.momentMalWholePage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* .momentMalBody{
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+} */
+.momentMalHeading{
+   
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 50px;
+}
+
+.momentMalHeading h2{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.momentMalVideo{
+    /* background-color: blue; */
+    margin: auto;
+    width: 80%;
+    height: 85vh;
+    margin-bottom: 50px;
+}
+
+.momentMalDes{
+    
+     margin: auto;
+    width: 80%;
+    height: 70vh;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.desHeading{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+    height:25vh;
+    
+    font-size: 30px;
+}
+
+.desPara{
+    
+    height: 30vh;
+     width: 100%;
+  
+}
+
+.p1, .p3{
+    font-weight: 600;
+}
+
+.p1, .p2{
+    line-height: 20px;
+}
+.desButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 100%;
+     height: 15vh;
+   
+}
+#proBtn{
+    background-color: rgb(238, 166, 71);
+    border-radius: 120px;
+    padding: 15px;
+    border: none;
+    color: white;
+    width: 120px;
+    font-weight: 900;
+
+}
+.coupleImg{
+    width:90%;
+    display: flex;
+    column-gap: 10px;
+    margin: auto;
+}
+.coupleImg img{
+    width: 70%;
+    height: 130vh;
+}
+
+#proBtn:hover{
+    background-color: brown;
+    color: black;
+}
+.harmony{
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    height: 300vh;
+   
+}
+.drive{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.drive a{
+    text-decoration: none;
+    color: gray;
+}

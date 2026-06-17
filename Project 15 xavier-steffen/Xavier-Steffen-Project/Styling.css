@@ -1,0 +1,432 @@
+*{
+    box-sizing: border-box;
+}
+ 
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: white;
+}
+.homePage{
+    display: flex;
+    gap: 0;
+    
+}
+#manue{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px; 
+    width: 50px; /* try to increase*/
+    height: 30px;
+    margin: 30px 0px 20px 20px;
+    cursor: pointer;
+    z-index: 100;
+    position: fixed;
+    /* background-color: brown; */
+    margin-left: 40px;
+    
+}
+
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: gray;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;/*Purpose & Learn form YT*/
+}
+
+#bar1:hover{
+    width: 90%;
+    background-color: black;
+}
+#bar2:hover{
+    width: 50%;
+    background-color: black;
+}
+#bar3:hover{
+    width: 70%;
+    background-color: black;
+}
+
+/* #bar1{
+    transform: translateY(-4px);/*Learn from YT & how it brings space between the bars*//*
+}
+#bar3{
+    transform: translateY(4px);/*Learn from YT & how it brings space between the bars*//*
+} */
+
+#nav li a{
+        color: black;
+        text-decoration: none;
+} 
+#nav li{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    list-style: none; 
+    padding: 15px 0px;/* First for what and second for what and so on*/
+    font-size: 25px;
+} 
+
+#nav h2{
+    
+    font-size: 40px;
+}
+
+/*.rightContainer{
+    background-color: #d66c6c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    width: 100%;
+    height: 70vh;
+    margin: 15vh 0vh; 
+}  */
+
+.rightContainer ul{
+    margin-top: 150px;
+    width: 100%;
+    margin-left: 160%;
+    /* background-color: #ffd413;  */
+}
+
+.rightContainer ul li{
+   margin-right: 100px;
+}
+.manueYellow{
+    margin-top:-20px;
+        width: 250px;
+        height: 5px;
+        background-color: #ffd500;
+        border-radius: 5px;
+}
+
+.nav{
+    display: none; 
+} 
+
+.icon .bar/*Why*/
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);/*Why*/
+}
+.icon #bar1{
+    transform: translateY(4px) rotate(-45deg);
+    background-color: black;
+}
+.icon #bar3{
+    transform: translateY(-6px) rotate(45deg);
+    background-color: black;
+}
+.icon #bar2{
+   opacity: 0;
+}
+
+#hamburger{
+    display: flex;
+    /* width: 100%; */
+    
+}
+.leftContainer{
+    /* background-color: brown; */
+    height: 100vh;
+     width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(128, 128, 128, 0.123);
+    /* margin-top: 15vh; */
+    padding-right: 20px;
+
+    
+}
+
+/* Tabs */
+.tabContainer{
+    /* margin-top: 10px; */
+     /* background-color: #e61e1e;  */
+     width: 100%;
+}
+
+.tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.tab button{
+    background-color:#ffffff ;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    padding:20px 20px ;
+    cursor: pointer; 
+    font-size: 18px;
+}
+
+.tab button:hover{
+    background-color: rgb(235, 223, 223);
+}
+.tab button.active{
+    background-color: rgb(235, 227, 200);
+}
+.tabcontent{
+    background-color: white;
+    padding: 15px;
+    /* line-height: 20px; */
+     width: 100%;
+    display: none; 
+}
+
+/* Tab 1*/
+.images{
+    /* background-color: #90caf8; */
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgb(230, 216, 216);
+}
+.row1{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    column-gap: 1%;
+    align-items: center;
+    justify-content: center;
+}
+.row2{
+    /* background-color: blanchedalmond; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    column-gap: 1%;
+    align-items: center;
+    justify-content: center;
+}
+.image-card {
+    position: relative;
+    width: 330px;
+    height: 350px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/*image */
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* smooth zoom */
+    
+}
+
+/*overlay*/
+.overlay {
+    position: absolute;/* explaination*/
+    inset: 0;/* explaination*/
+    background: rgba(0,0,0,0.6); /* black shade */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #fff;
+   
+    padding: 20px;
+}
+
+.overlay h2 {
+    line-height: 25px;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.overlay .links a {
+    color: #ffd413;
+    text-decoration: none;
+}
+
+/* hover effect*/
+.image-card:hover img {
+    transform: scale(1.1); /* zoom IN */
+    filter: brightness(0.9); /* extra dim if needed */
+}
+
+.image-card:hover .overlay {
+    opacity: 1; /* show overlay */
+}
+
+/* Tab 2*/
+.tab2Container, .tab3Container, .tab4Container, .tab5Container{
+    display: flex;
+    column-gap: 10px;
+}
+
+/* Contact Page*/
+
+.wholeForm{
+    display: flex;
+    flex-direction: column;
+}
+.contactPage{
+    display: flex;
+}
+.contactPageBody{
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+   
+}
+.form{
+    height: 80vh;
+     width: 70vh;
+     margin-left: 40%;
+     margin-top: 5%;
+    /*margin-bottom: 5%; */
+    
+   
+}
+form{
+    width: 100%;
+  
+    border-bottom: 1px solid rgb(211, 193, 193);
+    margin-bottom: 30px;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.yellow{
+    height: 5px;
+    width: 50px;
+    background-color: yellow;
+    
+}
+
+#name, #eMail, #number, #subject, #message{
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+}
+.cont2{
+    width: 80vh;
+}
+#message{
+    width: 68vh;
+    padding-bottom: 80px;
+}
+#btn{
+    background-color: yellow;
+    border: none;
+    padding: 10px;
+}
+.humanCheck{
+    margin-left: 300px;
+}
+
+
+/* About me*/
+.aboutHamburger{
+    display: flex;
+}
+.scroll-container{
+    height: 280px;
+    width: 100%;
+    background-color: rgb(255, 208, 0);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.scroll-container h3{
+    font-family:cursive;
+    font-size: 30px;
+}
+
+.scroll-container:hover{
+    color: white;
+}
+
+/* Track with double text */
+.scroll-track {
+    
+    animation: scroll-left 15s linear infinite;
+}
+
+/* Keyframes */
+@keyframes scroll-left {          /* 👈  name same rakh sakte hain ya rename */
+    0%   { transform: translateX(-50%); }  /* 👈 start left side se */
+    100% { transform: translateX(0); }     /* 👈 end right side par */
+}
+
+.container{
+    width: 100%;
+    /* margin: auto; */
+   display: flex;
+   margin-bottom: 50px;
+   border-bottom: 1px solid rgb(212, 206, 206);
+   padding: 100px;
+
+    /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+    transition: transform 0.3s ease;
+  
+}
+.container:hover{
+    transform: translateY(-60px); /* -ve value = move UP */
+    
+}
+.intro{
+    width: 40%;
+    font-size: 15px;
+    padding: 50px;
+}
+.pic{
+    width: 50%;
+    height: 50%;
+    margin-top: -150px;
+}
+.pic img{
+    height: 600px;
+    width: 600px;
+
+    padding-top: -100px;
+    
+    /* position: absolute;
+    top: 200px;
+    right: 100px; */
+}
+
+footer{
+    margin-top: 20px;
+    border-top: 1px solid rgb(230, 216, 216);
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}
+.footer{
+    display: flex;
+}
+.insta{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    width: 100px;
+    height: 20px;
+    background-color: yellow;
+    transform: rotate(90deg);
+    font-size: 12px;
+    padding: 10px; 
+    
+}
