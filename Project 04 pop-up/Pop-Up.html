@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .popUp{
+            height: 300px;
+            width: 300px;
+            background-color: #ccc;
+            margin: auto;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #btn{
+            background-color: white;
+            padding: 30px;
+            border-radius: 120px;
+            color: black;
+            width: 200px;
+            margin: auto;
+            display: block;
+            margin-top: 50px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 450px;
+            right: 600px;
+            
+        }
+        .close{
+            height: 50px;
+            width: 50px;
+            border: none;
+            display: inline;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="popUp">
+        <button id="close">Close</button>
+    </div>
+    <button id="btn" type="submit">Submit</button>
+</body>
+<script>
+    let popUp = document.getElementById("popUp");
+    let btn = document.getElementById("btn");
+    let close = document.getElementById("close");
+        close.style.display = "none";
+       
+
+    btn.addEventListener("click",()=>{
+        popUp.classList.add("popUp");
+        close.classList.add("close");
+        close.style.display = "block";
+        btn.style.display = "none";
+    });
+
+    close.addEventListener("click",()=>{
+    popUp.classList.remove("popUp");
+    close.classList.remove("close");
+    btn.style.display = "block";
+    close.style.display = "none";
+    });
+
+</script>
+</html>
