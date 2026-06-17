@@ -1,0 +1,131 @@
+/* Global Font */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.logo {
+    height: 60px;
+    width: 100px;
+    border-radius: 120px;
+}
+/* Colors */
+.bg-purple{
+    background-color: #4b0082; /* ULM Purple */
+}
+
+.text-purple{
+    color: #4b0082;
+}
+
+.text-yellow{
+    color: #ffea00;
+}
+
+/* Dropdown on Hover */
+.nav-item:hover .dropdown-menu{
+    display: block;
+}
+
+/* Hero Section */
+.hero{
+    height: 80vh;
+    background-image: url("/202306060830.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(75, 0, 130, 0.5);
+}
+
+.hero .container{
+    position: relative;
+    z-index: 5;
+}
+
+/* Footer Links */
+.footer-links{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li{
+    margin: 6px 0;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: #ffea00;
+    padding-left: 5px;
+}
+.hod-img {
+    height: 400px;
+    width: 400px;
+}
+#hod{
+    padding-top: 20px;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+/* Finder Page*/
+
+
+/* Theme Colors */
+.bg-purple {
+    background-color: #4b0082;
+}
+.text-purple {
+    color: #4b0082;
+}
+
+ .btn-purple {
+    background: #4b0082;
+    color: #fff;
+} 
+.btn-purple:hover {
+    background-color:#aa87c4;
+    color: #000000;
+}
+
+/* Boxes */
+.form-box {
+    border: 2px solid #4b0082;
+    padding: 25px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+/* Navbar hover dropdown */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Keep dropdown visible on hover (desktop) */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Improve smooth hover transition */
+.dropdown-menu {
+    margin-top: 0;
+}
+.btn {
+    list-style: none;
+    text-decoration: none;
+}
+.btn:hover {
+               color: #fff;
+               /* background-color: rgba(143, 84, 185, 0.3); */
+              
+}

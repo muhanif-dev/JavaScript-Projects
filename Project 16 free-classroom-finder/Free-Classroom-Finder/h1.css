@@ -1,0 +1,100 @@
+body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f4fb;
+        }
+
+        /* Header */
+        .top-header {
+            background-color: #d9d4e4; /* Purple */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        .classrooms-hero {
+            
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+            text-align: center;
+            padding: 20px;
+            
+        }
+        .h1-bg {
+            background: url('/3866d14b277f78bee62ca262b685d6fa.jpg') center/cover no-repeat;
+        }
+        .h2-bg {
+            background: url('/18de0b92a66b8dabe47a7024707e92b2.jpg') center/cover no-repeat;
+        }
+        .h3-bg {
+            background: url('/f4ba1a8ccd41caaaa6fe57fe1028a28c.jpg')  center/cover no-repeat;;
+        }
+        .h4-bg {
+            background: url('/70685910c6f521c3fc7c0bf699890a59.jpg')  center/cover no-repeat;;
+        }
+        .lab-bg {
+            background: url('/b61d9ea648cbfc8b1c2bfbf1a6a85f71.jpg')  center/cover no-repeat;;
+        }
+
+        /* Cards */
+        .class-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .class-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+        .card-hover-info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(4px);
+            background: rgba(75, 46, 131, 0.65);
+            color: white;
+            opacity: 0;
+            transition: 0.4s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .class-card:hover img {
+            transform: scale(1.1);
+        }
+        .class-card:hover .card-hover-info {
+            opacity: 1;
+        }
+
+        .card-bottom-text {
+            margin-top: 10px;
+            background: white;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            color: #4b2e83;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4b2e83;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
