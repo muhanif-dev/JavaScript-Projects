@@ -1,93 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
-*{
-    margin: 0%;
-    padding: 0%;
+* {
     box-sizing: border-box;
-    color: white;
 }
-body{
-    height: 100vh;
+
+body {
+    min-height: 100vh;
+    min-height: 100svh;
+    margin: 0;
+    padding: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: poppins;
+    background-color: #f8f4f4;
+    font-family: Poppins, sans-serif;
 }
-.main{
-    height: 350px;
-    width: 600px;
+
+.main {
+    width: min(100%, 600px);
+    padding: 28px 24px;
+    border-radius: 12px;
     background-color: #561c24;
-    border-radius: 10px;
-    padding: 10px;
 }
-.title{
-   /* background-color: aqua; */
-   width: 300px;
-   margin: auto;
-   text-align: center;
-   margin-top: 10px;
-   margin-bottom: 10px;
+
+.title {
+    margin: 0 auto 12px;
+    text-align: center;
 }
-.form{
-    /* background-color: blueviolet; */
-    width: 550px;
-    height: 150px;
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 10px;
+
+.title h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.25;
 }
-.bill, .tip{
-    width: 550px;
-    height: 30px;
-    margin-bottom: 15px;
-    padding: 8px;
-    border: none;
+
+.introLine {
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.form {
+    width: 100%;
+    margin: 24px auto 0;
+}
+
+.form p {
+    margin: 0 0 16px;
+}
+
+.bill,
+.tip {
+    display: block;
+    width: 100%;
+    min-height: 42px;
+    margin-top: 6px;
+    padding: 8px 12px;
+    border: 0;
     border-radius: 5px;
-    color: black;
+    background-color: #fff;
+    color: #241719;
+    font: inherit;
 }
-.btn{
+
+.bill:focus-visible,
+.tip:focus-visible,
+.btn:focus-visible {
+    outline: 3px solid #f1b8bf;
+    outline-offset: 2px;
+}
+
+.btn {
+    width: 100%;
+    min-height: 42px;
+    margin-top: 2px;
+    border: 0;
+    border-radius: 5px;
     background-color: #6d2932;
-    height: 30px;
-    width: 550px;
-    margin: auto;
-    border: none;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
     cursor: pointer;
-    border-radius: 5px;
 }
-.result{
-   
-    width: 550px;
-    margin: auto;
-    height: 30px;
-    margin-top: 30px;
+
+.btn:hover {
+    background-color: #80313c;
 }
-@media (max-width: 360px) {
-   body{
-    height: 60vh;
-    margin: auto;
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    margin: 24px auto 0;
+    font-size: 1.125rem;
 }
-    .main{
-        width: 300px;
-        height: 300px;
-        margin-right:30px; 
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
     }
-    .title{
-   width: 150px;
-   font-size: 10px;
+
+    .main {
+        padding: 24px 20px;
+    }
+
+    .title h1 {
+        font-size: 1.75rem;
+    }
+
+    .introLine {
+        font-size: 0.9375rem;
+    }
 }
-.bill, .tip{
-    width: 270px;
-    height: 20px;
-}
-.btn{
-    height: 30px;
-    width: 270px;
-    
-}
-.introLine{
-    font-size: 15px;
-}
-.form p{
-    font-size: 15px;
-}
+
+@media (max-width: 360px) {
+    body {
+        padding: 12px;
+    }
+
+    .main {
+        padding: 20px 16px;
+    }
+
+    .result {
+        font-size: 1rem;
+    }
 }

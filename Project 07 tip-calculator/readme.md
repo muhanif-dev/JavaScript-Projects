@@ -12,6 +12,7 @@ This project allows users to calculate the tip amount and total payable bill bas
 * Total Bill Calculation
 * Easy User Input
 * Responsive Design
+* Custom Browser Tab Icon
 * Clean User Interface
 * Real-Time Results
 
@@ -39,6 +40,7 @@ project-folder/
 │
 ├── index.html
 ├── style.css
+├── favicon.svg
 └── script.js
 ```
 
@@ -77,4 +79,3 @@ LinkedIn: https://www.linkedin.com/in/muhammad-hanif-92a127358
 ## License
 
 This project is open-source and available for learning and educational purposes.
-
